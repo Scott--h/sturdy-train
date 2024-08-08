@@ -27,13 +27,13 @@ function usage {
 
 # Creates a set of python template folders
 function create_repo_folders {
-    mkdir $REPO_NAME
-    touch $REPO_NAME/setup.py
-    touch $REPO_NAME/README.md
-    touch $REPO_NAME/LICENSE
-    mkdir $REPO_NAME/$REPO_NAME/
-    touch $REPO_NAME/$REPO_NAME/__init__.py
-    touch $REPO_NAME/$REPO_NAME/python_script_template.py
+    mkdir $(pwd)/$REPO_NAME
+    touch $(pwd)/$REPO_NAME/setup.py
+    touch $(pwd)/$REPO_NAME/README.md
+    touch $(pwd)/$REPO_NAME/LICENSE
+    mkdir $(pwd)/$REPO_NAME/$REPO_NAME/
+    touch $(pwd)/$REPO_NAME/$REPO_NAME/__init__.py
+    touch $(pwd)/$REPO_NAME/$REPO_NAME/python_script_template.py
 }
 
 # setup variables
